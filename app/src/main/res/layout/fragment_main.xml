@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/main"
+        tools:context=".Clases.MainActivity$PlaceholderFragmentMain"
+        android:background="@color/colorPrimary" tools:background="@color/colorPrimary">
+
+
+ <ImageView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content" app:srcCompat="@mipmap/na"
+         android:id="@+id/imageViewIco"
+         app:layout_constraintEnd_toEndOf="parent"
+         android:layout_marginEnd="8dp" android:layout_marginRight="8dp"
+         app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
+         android:layout_marginStart="8dp" app:layout_constraintHorizontal_bias="0.487"
+         app:layout_constraintBottom_toTopOf="@+id/textViewDerscipcion"
+         android:contentDescription="@string/imagen" android:layout_marginBottom="32dp"/>
+ <TextView
+         android:text="@string/no_data"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+         android:id="@+id/textViewDerscipcion" android:layout_marginBottom="240dp"
+         app:layout_constraintBottom_toBottomOf="parent"
+         android:textSize="36sp" app:fontFamily="sans-serif"
+         tools:text="Despejado" android:gravity="center" app:layout_constraintHorizontal_bias="0.502"/>
+ <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:id="@+id/textViewLocal" tools:text="Durcal"
+         android:text="@string/durcal"
+         android:textSize="36sp"
+         app:fontFamily="sans-serif" android:gravity="center"
+         android:layout_marginTop="90dp"
+         app:layout_constraintTop_toTopOf="parent" android:layout_marginEnd="8dp"
+         app:layout_constraintEnd_toEndOf="parent" android:layout_marginRight="8dp" android:layout_marginStart="8dp"
+         app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
+         app:layout_constraintHorizontal_bias="0.501"
+         app:layout_constraintBottom_toTopOf="@+id/imageViewIco" app:layout_constraintVertical_bias="1.0"
+         android:layout_marginBottom="25dp"/>
+ <android.support.constraint.Guideline android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                       android:id="@+id/guidelineLocalizacion"
+                                       android:orientation="vertical" app:layout_constraintGuide_begin="176dp"/>
+ <TextView
+         android:text="@string/contenedortemmperatura"
+         android:layout_width="0dp"
+         android:layout_height="wrap_content"
+         android:id="@+id/textViewTempera" app:layout_constraintEnd_toStartOf="@+id/guidelineLocalizacion"
+         app:layout_constraintStart_toStartOf="parent"
+         android:layout_marginTop="32dp"
+         app:layout_constraintTop_toBottomOf="@+id/textViewDerscipcion"
+         app:layout_constraintBottom_toBottomOf="parent" android:textSize="36sp"
+         android:gravity="center_vertical|center_horizontal" app:layout_constraintHorizontal_bias="0.0"
+         app:layout_constraintVertical_bias="0.44" android:layout_marginBottom="15dp"/>
+ <TextView
+         android:text="@string/contenedorprcip"
+         android:layout_width="0dp"
+         android:layout_height="wrap_content"
+         android:id="@+id/textViewPrecip" app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintStart_toEndOf="@+id/textViewTempera"
+         android:layout_marginTop="32dp"
+         app:layout_constraintTop_toBottomOf="@+id/textViewDerscipcion" app:layout_constraintHorizontal_bias="0.0"
+         app:layout_constraintBottom_toBottomOf="parent" android:textSize="36sp"
+         android:gravity="fill_vertical|center_horizontal" app:layout_constraintVertical_bias="0.398"/>
+ <TextView
+         android:text="@string/temperatura"
+         android:layout_width="0dp"
+         android:layout_height="wrap_content"
+         android:id="@+id/textView6"
+         app:layout_constraintBottom_toTopOf="@+id/textViewTempera" android:layout_marginTop="8dp"
+         app:layout_constraintTop_toBottomOf="@+id/textViewDerscipcion"
+         app:layout_constraintEnd_toStartOf="@+id/guidelineLocalizacion" android:layout_marginEnd="8dp"
+         android:layout_marginRight="8dp" app:layout_constraintStart_toStartOf="parent"
+         android:layout_marginLeft="8dp" android:layout_marginStart="8dp"
+         app:layout_constraintHorizontal_bias="0.0" app:layout_constraintVertical_bias="1.0"
+         android:textSize="17sp" android:gravity="center"/>
+ <TextView
+         android:text="@string/precipitaciones"
+         android:layout_width="0dp"
+         android:layout_height="wrap_content"
+         android:id="@+id/textView7" app:layout_constraintStart_toStartOf="@+id/guidelineLocalizacion"
+         android:layout_marginLeft="8dp" android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent"
+         android:layout_marginEnd="8dp" android:layout_marginRight="8dp" android:layout_marginTop="8dp"
+         app:layout_constraintTop_toBottomOf="@+id/textViewDerscipcion"
+         app:layout_constraintBottom_toTopOf="@+id/textViewPrecip" app:layout_constraintHorizontal_bias="0.0"
+         app:layout_constraintVertical_bias="1.0" android:textSize="17sp" android:gravity="center"/>
+ <TextView
+         android:layout_width="0dp"
+         android:layout_height="68dp"
+         app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="16dp"
+         android:layout_marginStart="16dp" android:id="@+id/textView4"
+         android:layout_marginTop="8dp"
+         app:layout_constraintTop_toTopOf="parent" android:layout_marginBottom="8dp"
+         app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintVertical_bias="0.018"
+         android:textSize="24sp" android:layout_marginEnd="8dp" app:layout_constraintEnd_toEndOf="parent"
+         android:layout_marginRight="8dp" app:layout_constraintHorizontal_bias="0.0"/>
+</android.support.constraint.ConstraintLayout>

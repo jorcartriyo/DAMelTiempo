@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Aqui DAM el Tiempo</string>
+    <string name="tab_text_1">Ahora</string>
+    <string name="tab_text_2">Diario</string>
+    <string name="tab_text_3">Horas</string>
+    <string name="no_data">No Data</string>
+    <string name="durcal">Durcal</string>
+    <string name="imagen">imagen</string>
+    <string name="temperatura">TEMPERATURA</string>
+    <string name="precipitaciones">PRECIPITACIONES</string>
+    <string name="action_settings">Settings</string>
+    <string name="languaje">en</string>
+    <string name="units">us</string>
+    <string name="contenedorprcip">0.0 %</string>
+    <string name="contenedortemmperatura">0.0 Cº</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+</resources>

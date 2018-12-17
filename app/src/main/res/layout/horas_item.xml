@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="wrap_content"
+                                             android:background="@color/colorPrimary" android:id="@+id/horasItem">
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/LinealHoras">
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/textViewHora" android:layout_weight="1"
+                android:textSize="24sp" android:gravity="center" tools:text="2:00 p.m"/>
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/textViewGrados" android:layout_weight="1"
+                android:textSize="24sp" android:gravity="center" tools:text="24 cº"/>
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/textViewProv" android:layout_weight="1"
+                android:textSize="24sp" android:gravity="center" tools:text="12 %"/>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
